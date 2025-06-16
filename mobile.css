@@ -192,7 +192,10 @@ th, td {
     color: var(--cor-texto);
     margin-bottom: 20px;
 }
-
+.chops{
+    display: flex;
+    justify-content: center;
+}
 /* --- Lista de Jogadores e Personagens --- */
 .butoes{
     display: flex;
@@ -214,7 +217,6 @@ th, td {
     border-radius: 5px;
     border-style: none;
     --bs-btn-hover-bg: var(--cor-destaque);
-    margin-bottom: 20px;
 }
 .margin_botao_deletar{
     margin-right: 30px;
