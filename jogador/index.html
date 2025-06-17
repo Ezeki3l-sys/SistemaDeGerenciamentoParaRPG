@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
       <link rel="stylesheet" href="../mobile.css">
       <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Crete+Round:ital@0;1&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-      <link rel="icon" href="../imagens/d20s2.webp">
+      <link rel="icon" href="imagens/d20s2.webp">
       <title>Armazém da Aventura</title>
    </head>
    <body class="body_players">
@@ -250,13 +250,15 @@
             
             if(!jogadores.length>0){
                const divJogador = document.createElement("div");
-               divJogador.innerHTML = `<h2>${nome}</h2>`
                divJogador.setAttribute("id", `jogador_${nome}`);
                divJogador.setAttribute ('class', 'caixas_de_escolha_players')
                const divAddJogador = document.createElement("div");
                divAddJogador.innerHTML= `
-               <button type="button" class="btn btn-primary"  onclick="abrirModalAddPersonagem('${nome}')" >
-               Adicionar novo personagem para o ${nome}</button>
+                  <section id class="chops">
+                  <button class="margin_botao_deletar botao_criar_personagem" onclick=excluirJogador('${nome}'); ><i class="bi bi-trash"></i></button>
+                  <h2>${nome}</h2>
+                  <button class="margin_botao_editar botao_criar_personagem" onclick=adicionarPersonagem('${nome}'); ><i class="bi bi-plus-lg"></i></button>
+                  </section>
                `
                divJogador.appendChild(divAddJogador);
                   
@@ -271,13 +273,16 @@
                }
                else{
                   const divJogador = document.createElement("div");
-                  divJogador.innerHTML = `<h2>${nome}</h2>`
                   divJogador.setAttribute("id", `jogador_${nome}`);
                   divJogador.setAttribute ('class', 'caixas_de_escolha_players')
                   const divAddJogador = document.createElement("div");
                   divAddJogador.innerHTML= `
-                  <button type="button" class="btn btn-primary"  onclick="abrirModalAddPersonagem('${nome}')" >
-                  Adicionar novo personagem para o ${nome}</button>
+                     <section id class="chops">
+                     <button class="margin_botao_deletar botao_criar_personagem" onclick=excluirJogador('${nome}'); ><i class="bi bi-trash"></i></button>
+                     <h2>${nome}</h2>
+                     <button class="margin_botao_editar botao_criar_personagem" onclick=adicionarPersonagem('${nome}'); ><i class="bi bi-plus-lg"></i></button>
+         
+                     </section>
                   `
                   divJogador.appendChild(divAddJogador);
                   
