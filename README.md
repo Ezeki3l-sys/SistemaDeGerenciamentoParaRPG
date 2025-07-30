@@ -1,4 +1,4 @@
-Seja bem-vindo ao site Armazém da Aventura!
+# Seja bem-vindo ao site Armazém da Aventura!
 
 O Projeto Armazém da Aventura foi feito com o intuito de auxiliar os mestres e players (em geral, pessoas que tem o hobbie de jogar RPG) no quesito de organizar e armazenar as informações 
 de suas campanhas, sessões e personagens, dando o suporte necessário para que os usuários não se percam na produção de uma campanha de RPG ou na criação de um personagem.
