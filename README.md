@@ -15,3 +15,5 @@ personagem, sua classe, sua vida e sua mana (o usuário pode adaptar as informa�
 
 A premissa soa simples, e com nosso site, o processo de criar uma campanha será facilitado, evitando que informações importantes sejam perdidas, podendo ser acessadas de forma muito
 mais rápida e prática.
+
+Aproveite e visite nosso site <https://ezeki3l-sys.github.io/SistemaDeGerenciamentoParaRPG/>
